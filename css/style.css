@@ -1,3 +1,135 @@
 body {
-    background-color: black;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.wrapper {
+    padding: 30px;
+}
+
+.flag {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+/* ukraine */
+
+.rectangle__blue,
+.rectangle__yellow {
+    width: 100%;
+    height: 50%;
+}
+
+.rectangle__blue {
+    background-color: #0057b8;
+}
+
+.rectangle__yellow {
+    background-color: #ffd700;
+}
+
+/* japan */
+
+.japan {
+    border: 1px solid #000;
+    background-color: #fff;
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: #CE1126;
+}
+
+/* iceland */
+
+.iceland {
+    position: relative;
+    height: 216px;
+    background-color: #fff;
+}
+
+.cube {
+    position: absolute;
+    width: 84px;
+    height: 84px;
+    background-color: #02529C;
+}
+
+.cube__bottom {
+    bottom: 0;
+}
+
+.rectangle {
+    position: absolute;
+    right: 0;
+    width: 168px;
+    height: 84px;
+    background-color: #02529C;
+}
+
+.rectangle__bottom {
+    bottom: 0;
+}
+
+.line {
+    position: absolute;
+    background-color: #DC1E35;
+}
+
+.line__horisont {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 24px;
+}
+
+.line__vertical {
+    left: 96px;
+    width: 24px;
+    height: 100%;
+}
+
+/* сzech */
+
+.czech {
+    position: relative;
+    border: 1px solid #000;
+}
+
+.rectangle__white,
+.rectangle__red {
+    width: 100%;
+    height: 50%;
+}
+
+.rectangle__white {
+    background-color: #fff;
+}
+
+.rectangle__red {
+    background-color: #D7141A;
+}
+
+.tri-right {
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-left: 150px solid #11457E;
+}
+
+@media screen and (max-width: 900px) {
+    .flag {
+        margin: 0 auto 30px auto;
+    }
 }
